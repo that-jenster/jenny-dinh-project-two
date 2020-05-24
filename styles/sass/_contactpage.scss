@@ -1,0 +1,39 @@
+.contact-main {
+    background-color: $secondaryColor;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.social-media {
+    padding: 50px;
+}
+
+.social-media i {
+    color: $fontColor;
+    font-size: 25px;
+    padding: 10px;
+}
+.form-input-contact {
+    position: relative;
+    right: 50px;
+    bottom: 150px;
+    box-shadow: 20px 20px $sideColor;
+}
+
+
+// Media Query for contact page responsive design
+@media screen and (max-width: $breakPointTab) {
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .form-input-contact {
+        right: 0;
+        bottom: 0;
+        box-shadow: none;
+    }
+
+}

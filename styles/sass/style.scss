@@ -1,0 +1,53 @@
+@import "setup";
+@import "mixinsVariables";
+@import "header";
+@import "mainpage";
+@import "contactpage";
+@import "blogpage";
+@import "form";
+
+// Global CSS style
+html {
+    font-size: 100%;
+}
+
+.content-wrap {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+body,
+h2,
+h3 {
+    margin: 0 auto;
+}
+
+time {
+    font-size: 1.2rem;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+button {
+    @include button-property;
+}
+
+p {
+    @include body-text;
+}
+
+img {
+    @include img-style;
+}
+
+footer {
+    @include footer-style;
+}
+
+// Universal Media Query 
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 80%;
+    }
+}

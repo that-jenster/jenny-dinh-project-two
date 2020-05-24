@@ -1,0 +1,151 @@
+// Global use
+.main-blue,
+.road-trips,
+.events {
+    background-color: $secondaryColor;
+}
+
+.main-purple,
+.gallery {
+    background-color: $mainColor;  
+}
+
+// Adding image to header 
+.header-img {
+    width: 45%;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
+
+//Section area of New space/Blog/Community/Get in touch
+.four-program {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 50px;
+}
+
+// Styling the icon next to the text
+.icon-program {
+position: relative;
+right: 60px;
+top: 80px;
+background-color: $sideColor;
+font-size: 30px;
+color: $mainColor;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+text-align: center;
+padding: 10px;
+}
+
+.program {
+    padding: 50px;
+} 
+
+// Our programs & Location Area
+.purple-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.purple-container {
+    width: 40%;
+        .img-up {
+            position: relative;
+            bottom: 50px;
+            box-shadow: 10px 10px $sideColor;
+        }
+        .img-down {
+            position: relative;
+            top: 50px;
+            box-shadow: $boxShadow;
+        }
+}
+
+.content-right {
+    text-align: right;
+    padding-bottom: 40px;
+}
+
+// Road Trip section with the banner underneath
+.trips-container {
+    text-align: center;
+    padding: 50px 100px;
+}
+
+// Section where EVENTS happens
+.events-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+        img {
+            width: 30%;
+            box-shadow: $boxShadow;
+        }
+}
+
+.events-text {
+    width: 70%;
+    padding: 0 40px;
+}
+
+// Photo Gallery at the bottom before footer
+.photo-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        img {
+            margin: 50px 0;
+            padding: 0 50px;
+        }
+}
+
+// Media Query for Responsive Design
+// Screen that are 850px or less set this properties to them
+@media screen and (max-width: $breakPointTab) {
+    .header-img {
+        display: none;
+    }
+
+    .four-program {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon-program {
+        position: relative;
+        right: 0;
+        top: 15px;
+    }
+
+    .purple-flex,
+    .photo-gallery,
+    .events-container {
+        flex-direction: column;
+    }
+
+    .purple-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-right {
+        text-align: center;
+    }
+
+    .events-container img {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+// Media Screen for mobile respsonsive set these property to them
+@media screen and (max-width: $breakPointMob) {
+
+}

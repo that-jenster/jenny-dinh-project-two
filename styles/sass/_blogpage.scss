@@ -1,0 +1,113 @@
+.main-bg {
+    background-color: $secondaryColor;
+}
+
+// Main section being split/flex into two column
+.main-blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+}
+.section-blog {
+    width: 60%;
+}
+
+//Content section of New activity 
+.content-section {
+    border: 10px solid $sideColor;
+    border-right: none;
+        img {
+            position: relative;
+            bottom: 100px;
+            box-shadow: $boxShadow;
+    }
+}
+.border-line {
+    margin: 0 50px 50px 50px;
+}
+
+// side box 
+aside {
+    width: 400px;
+        img {
+            position: relative;
+            z-index: 2;
+            top: 50px;
+        }
+}
+.aside-purple {
+    background-color: $mainColor;
+    padding: 40px;
+    margin-left: 40px;
+    transform: translate(20px);
+        ul li {
+            color: $fontColor;
+            font-family: $firstFont;
+            font-size: 20px;
+        }
+}
+
+// Section of comments 
+.section-comments {
+    display: flex;
+    margin: 0 50px 50px 50px;
+            img {
+                width: 80%;
+                height: 80%;
+                position: relative;
+                top: 55px;
+            }
+            div {
+                padding: 40px;
+            }    
+}
+
+// Media Query for tablet version
+@media screen and (max-width: $breakPointTab) {
+    .main-blog {
+        flex-direction: column;
+    }
+
+    aside,
+    .section-blog {
+        width: 100%;
+    }
+
+    .border-line {
+        padding: 20px;
+        border: 2px dotted $sideColor;
+    }
+
+    aside img {
+        z-index: 0;
+        top: 0px;
+    }
+
+    .aside-purple {
+        margin: 0;
+        transform: translate(0);
+    }
+
+    .content-section {
+        border: none;
+            img {
+                box-shadow: none;
+                bottom: 0;
+            }
+    }
+}
+// Media Query for Mobile Version
+@media screen and (max-width: $breakPointMob) {
+    .section-comments  {
+        flex-direction: column;
+            img {
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+            div p:nth-child(2) {
+                display: none;
+            }
+    }
+}

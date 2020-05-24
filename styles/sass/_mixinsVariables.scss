@@ -1,0 +1,50 @@
+// Font ues in Design 
+$firstFont: 'Walter Turncoat', cursive;
+$secondFont: 'Roboto', sans-serif;
+
+// Color used in Design
+$mainColor: #474bb5;
+$secondaryColor: #03697c;
+$sideColor: #08fded;
+$fontColor: #f3faff;
+$boxShadow: -10px 10px #08fded;
+
+//Media Query Variables 
+$breakPointTab: 850px;
+$breakPointMob: 320px;
+
+// all button will get this property
+@mixin button-property {
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 41.6px;
+    text-align: center;
+    background-color: $sideColor;
+    color: #474bb5;
+    border: none;
+    padding: 10px;
+}
+
+// all body paragraph will get this property
+@mixin body-text {
+    font-family: $secondFont;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: $fontColor;
+    margin: 0;
+  }
+
+  // all based footer will have this property
+  @mixin footer-style {
+      background-color: #044779;
+      color: $fontColor;
+      text-align: center;
+  }
+  @mixin img-style {
+      width: 100%;
+      display: block;
+      
+  }

@@ -1,0 +1,115 @@
+.header-main {
+    background-image: url("FunPlace-final-assets/home-header.jpg");
+}
+.header-blog {
+    background-image: url("FunPlace-final-assets/blog-header.jpg");
+}
+.header-contact {
+    background-image: url("FunPlace-final-assets/contact-header.jpg");
+}
+
+.banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+   margin: 0;
+        li {
+        list-style: none;
+        display: inline-block;
+        margin: 40px 20px;   
+        }
+            a {
+                text-decoration: none;
+                color: #f3faff;
+                font-family: $secondFont;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                line-height: 29px;
+            }
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    text-decoration: underline #08fded 5px;
+    transition: 1s;
+}
+
+h1 {
+    font-size: 6.5rem;
+    font-family: $firstFont;
+    font-weight: 400;
+    color: $fontColor;
+    line-height: 100px;
+}
+
+h2 {
+    font-size: 5.5rem;
+    color: $fontColor;
+    font-family: $firstFont;
+    font-weight: 400;
+    line-height: 125.6px;
+    padding-left: 50px;
+}
+
+h3 {
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 99.8px;
+    letter-spacing: 1px;
+    color: $fontColor;
+}
+
+.hamburger,
+.exit-responsive {
+	display: none;
+}
+
+.exit-responsive {
+	position: relative;
+}
+//This is for the menu to be toggled
+.show.menu {
+	display: block;
+}
+
+// Media Query for Navigation Bar
+@media screen and (max-width: $breakPointTab) {
+    .hamburger,
+    .exit-responsive {
+        display: block;
+        font-size: 25px;
+    }
+    nav {
+        display: none;
+    }
+    
+    nav .fullScreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        z-index: 10;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
