@@ -7,46 +7,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
 </head>
 <body>
     <header class="header-contact banner">
-        <nav class="nav-contact">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://thatjenster.wordpress.com/">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h2>GET IN TOUCH</h2>
+        <div class="content-wrap">
+            <button class="hamburger"><i class="fa fa-bars"></i></button>
+                <nav class="menu">
+                    <div class="fullScreen">
+                        <button class="exit-responsive">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="https://thatjenster.wordpress.com/">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                </nav>
+            <h2>GET IN TOUCH</h2>
+        </div>
     </header>
     <main class="contact-main">
-        <div class="flex-container">
-            <div class="social-media">
-                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-whatsapp"></i></a>
-                <p>info@email.com</p> 
-                <p>123 - 456 - 789 <br> 123 Queen Street West, Unit 10 <br> Toronto, Ontario <br> M5V2D5</p>
+        <div class="content-wrap">
+            <div class="flex-container">
+                <div class="social-media">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-whatsapp"></i></a>
+                    <p>info@email.com</p> 
+                    <p>123 - 456 - 789 123 Queen Street West, Unit 10 Toronto, Ontario M5V2D5</p>
+                </div>
+                <form>
+                    <fieldset class="form-input-contact">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <label for="message" ></label>
+                    <textarea name="message" id="message" cols="40" rows="10">Message</textarea>
+                    <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
             </div>
-            <form class="form-section">
-                <fieldset class="form-input">
-                <label for="name" class="visuallyHidden"></label>
-                <input type="text" id="name" placeholder="Name">
-
-                <label for="email" class="visuallyHidden"></label>
-                <input type="email" id="email" placeholder="Email Address">
-
-                <label for="message" ></label>
-                <textarea name="message" id="message" cols="70" rows="20">Message</textarea>
-                <button type="submit">Submit</button>
-                </fieldset>
-            </form>
         </div>
     </main>
     <footer>
-        <p>Copyright @ 2019 Juno College</p>
+        <div class="content-wrap">
+            <p>Copyright @ 2019 Juno College</p>
+        </div>
     </footer>
    
 </body>
