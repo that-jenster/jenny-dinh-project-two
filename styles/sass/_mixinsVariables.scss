@@ -1,19 +1,44 @@
-// Font ues in Design 
+/* Font use in Design */
 $firstFont: 'Walter Turncoat', cursive;
 $secondFont: 'Roboto', sans-serif;
 
-// Color used in Design
+/* Color use in Design */
 $mainColor: #474bb5;
 $secondaryColor: #03697c;
 $sideColor: #08fded;
 $fontColor: #f3faff;
 $boxShadow: -10px 10px #08fded;
 
-//Media Query Variables 
+/*Media Query Variables */
 $breakPointTab: 850px;
-$breakPointMob: 320px;
+$breakPointMob: 360px;
 
-// all button will get this property
+/* Mixin for all header tags */
+@mixin h1-tag {
+    font-size: 6.5rem;
+    font-family: $firstFont;
+    font-weight: 400;
+    color: $fontColor;
+    line-height: 100px;
+}
+@mixin h2-tag {
+    font-size: 5.5rem;
+    color: $fontColor;
+    font-family: $firstFont;
+    font-weight: 400;
+    line-height: 125.6px;
+    padding-left: 50px;
+}
+@mixin h3-tag {
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 99.8px;
+    letter-spacing: 1px;
+    color: $fontColor;
+}
+
+/* all button will get this property */
 @mixin button-property {
     font-family: $firstFont;
     font-weight: 400;
@@ -24,9 +49,10 @@ $breakPointMob: 320px;
     color: #474bb5;
     border: none;
     padding: 10px;
+    margin-top: 30px;
 }
 
-// all body paragraph will get this property
+/* all body paragraph will get this property */
 @mixin body-text {
     font-family: $secondFont;
     font-weight: 400;
@@ -37,7 +63,7 @@ $breakPointMob: 320px;
     margin: 0;
   }
 
-  // all based footer will have this property
+  /* all based footer will have this property */
   @mixin footer-style {
       background-color: #044779;
       color: $fontColor;
@@ -46,5 +72,6 @@ $breakPointMob: 320px;
   @mixin img-style {
       width: 100%;
       display: block;
+      height: auto;
       
   }

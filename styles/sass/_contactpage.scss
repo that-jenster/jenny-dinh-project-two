@@ -8,32 +8,18 @@
     align-items: center;
 }
 .social-media {
-    padding: 50px;
+    padding: 80px;
+    width: 60%;
 }
 
 .social-media i {
     color: $fontColor;
     font-size: 25px;
-    padding: 10px;
+    padding: 0 20px 20px 0;
 }
 .form-input-contact {
     position: relative;
     right: 50px;
     bottom: 150px;
     box-shadow: 20px 20px $sideColor;
-}
-
-
-// Media Query for contact page responsive design
-@media screen and (max-width: $breakPointTab) {
-    .flex-container {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .form-input-contact {
-        right: 0;
-        bottom: 0;
-        box-shadow: none;
-    }
-
 }

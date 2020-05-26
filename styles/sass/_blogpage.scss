@@ -2,7 +2,7 @@
     background-color: $secondaryColor;
 }
 
-// Main section being split/flex into two column
+/* Main section being split/flex into two column */
 .main-blog {
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@
     width: 60%;
 }
 
-//Content section of New activity 
+/*Content section of New activity */
 .content-section {
     border: 10px solid $sideColor;
     border-right: none;
@@ -27,7 +27,7 @@
     margin: 0 50px 50px 50px;
 }
 
-// side box 
+/* side box with an image overlap */
 aside {
     width: 400px;
         img {
@@ -48,66 +48,17 @@ aside {
         }
 }
 
-// Section of comments 
+/* Section of comments */
 .section-comments {
     display: flex;
     margin: 0 50px 50px 50px;
-            img {
-                width: 80%;
-                height: 80%;
-                position: relative;
-                top: 55px;
-            }
+        img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 50px;
+        }
             div {
-                padding: 40px;
+            padding: 40px;
             }    
-}
-
-// Media Query for tablet version
-@media screen and (max-width: $breakPointTab) {
-    .main-blog {
-        flex-direction: column;
-    }
-
-    aside,
-    .section-blog {
-        width: 100%;
-    }
-
-    .border-line {
-        padding: 20px;
-        border: 2px dotted $sideColor;
-    }
-
-    aside img {
-        z-index: 0;
-        top: 0px;
-    }
-
-    .aside-purple {
-        margin: 0;
-        transform: translate(0);
-    }
-
-    .content-section {
-        border: none;
-            img {
-                box-shadow: none;
-                bottom: 0;
-            }
-    }
-}
-// Media Query for Mobile Version
-@media screen and (max-width: $breakPointMob) {
-    .section-comments  {
-        flex-direction: column;
-            img {
-                top: 0;
-                width: 100%;
-                height: 100%;
-            }
-            div p:nth-child(2) {
-                display: none;
-            }
-    }
 }

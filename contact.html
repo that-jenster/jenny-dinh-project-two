@@ -6,11 +6,12 @@
     <title>Project Two: Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascript.js"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <!-- header section with a toggled menu bar  -->
     <header class="header-contact banner">
         <div class="content-wrap">
             <button class="hamburger"><i class="fa fa-bars"></i></button>
@@ -20,43 +21,54 @@
                             <i class="fa fa-times"></i>
                         </button>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="https://thatjenster.wordpress.com/">About</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="index.html" target="_blank">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="blog.html" target="_blank">Blog</a></li>
+                            <li><a href="contact.html" target="_blank">Contact</a></li>
                         </ul>
+                    </div>
                 </nav>
-            <h2>GET IN TOUCH</h2>
+            <h2>Get in Touch</h2>
         </div>
     </header>
+    <!-- header ends here -->
+    <!-- main section begins here -->
     <main class="contact-main">
         <div class="content-wrap">
             <div class="flex-container">
+                <!-- socia media content information -->
                 <div class="social-media">
                     <a href="#"><i class="fa fa-facebook-f"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-whatsapp"></i></a>
                     <p>info@email.com</p> 
-                    <p>123 - 456 - 789 123 Queen Street West, Unit 10 Toronto, Ontario M5V2D5</p>
+                    <p>123 - 456 - 789</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario M5V2D5</p>
                 </div>
-                <form>
+                <!-- Get in touch contact form begins here. Required input of name and email -->
+                <form action="">
                     <fieldset class="form-input-contact">
-                    <input type="text" id="name" placeholder="Name">
-                    <input type="email" id="email" placeholder="Email">
-                    <label for="message" ></label>
-                    <textarea name="message" id="message" cols="40" rows="10">Message</textarea>
-                    <button type="submit">Submit</button>
+                        <label for="name" class="visuallyhidden"></label>
+                        <input type="text" id="name" class="contact-inpu" placeholder="Name" required>
+                        <label for="email" class="visuallyhidden"></label>
+                        <input type="email" id="email" class="contact-input" placeholder="Email" required>
+                        <label for="message" class="visuallyhidden"></label>
+                        <textarea name="message" id="message" cols="40" rows="10">Message</textarea>
+                        <button type="submit">Submit</button>
                     </fieldset>
                 </form>
             </div>
         </div>
     </main>
+    <!-- Main sections ends here -->
+    <!-- Footer section begins here -->
     <footer>
         <div class="content-wrap">
             <p>Copyright @ 2019 Juno College</p>
         </div>
     </footer>
-   
+    <!-- Footer ends here -->
 </body>
 </html>

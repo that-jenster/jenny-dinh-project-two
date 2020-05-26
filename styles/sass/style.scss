@@ -5,12 +5,9 @@
 @import "contactpage";
 @import "blogpage";
 @import "form";
+@import "mediaquery";
 
-// Global CSS style
-html {
-    font-size: 100%;
-}
-
+/* Global CSS style */
 .content-wrap {
     max-width: 75rem;
     margin: 0 auto;
@@ -32,6 +29,10 @@ time {
 button {
     @include button-property;
 }
+button:hover,
+button:focus {
+    border: 2px solid $mainColor;
+}
 
 p {
     @include body-text;
@@ -45,9 +46,3 @@ footer {
     @include footer-style;
 }
 
-// Universal Media Query 
-@media screen and (max-width: 850px) {
-    html {
-        font-size: 80%;
-    }
-}

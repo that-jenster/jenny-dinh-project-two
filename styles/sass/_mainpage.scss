@@ -1,4 +1,7 @@
-// Global use
+/* Global use */
+header {
+    position: relative;
+}
 .main-blue,
 .road-trips,
 .events {
@@ -10,42 +13,43 @@
     background-color: $mainColor;  
 }
 
-// Adding image to header 
+/* Adding image to header */
 .header-img {
-    width: 45%;
+    width: 40%;
     position: absolute;
     right: 0;
-    bottom: 100px;
+    bottom: -100px;
 }
 
-//Section area of New space/Blog/Community/Get in touch
+/*Section area of New space/Blog/Community/Get in touch*/
 .four-program {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-    padding: 50px;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 8%;
+}
+.program-flex {
+    width: calc(100% / 2);
+    padding: 0 10%;
 }
 
-// Styling the icon next to the text
+/* Styling the icon next to the text */
 .icon-program {
-position: relative;
-right: 60px;
-top: 80px;
-background-color: $sideColor;
-font-size: 30px;
-color: $mainColor;
-width: 50px;
-height: 50px;
-border-radius: 50%;
-text-align: center;
-padding: 10px;
+    position: relative;
+    right: 60px;
+    top: 80px;
+    background-color: $sideColor;
+    font-size: 30px;
+    color: $mainColor;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
 }
 
-.program {
-    padding: 50px;
-} 
-
-// Our programs & Location Area
+/* Our programs & Location Area */
 .purple-flex {
     display: flex;
     justify-content: space-between;
@@ -70,13 +74,13 @@ padding: 10px;
     padding-bottom: 40px;
 }
 
-// Road Trip section with the banner underneath
+/* Road Trip section with the banner underneath */
 .trips-container {
     text-align: center;
-    padding: 50px 100px;
+    padding: 50px;
 }
 
-// Section where EVENTS happens
+/* Section where EVENTS happens */
 .events-container {
     display: flex;
     flex-direction: row;
@@ -94,7 +98,7 @@ padding: 10px;
     padding: 0 40px;
 }
 
-// Photo Gallery at the bottom before footer
+/* Photo Gallery at the bottom before footer */
 .photo-gallery {
     display: flex;
     flex-direction: row;
@@ -105,47 +109,11 @@ padding: 10px;
             padding: 0 50px;
         }
 }
-
-// Media Query for Responsive Design
-// Screen that are 850px or less set this properties to them
-@media screen and (max-width: $breakPointTab) {
-    .header-img {
-        display: none;
-    }
-
-    .four-program {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .icon-program {
-        position: relative;
-        right: 0;
-        top: 15px;
-    }
-
-    .purple-flex,
-    .photo-gallery,
-    .events-container {
-        flex-direction: column;
-    }
-
-    .purple-container {
-        width: 100%;
-        text-align: center;
-    }
-
-    .content-right {
-        text-align: center;
-    }
-
-    .events-container img {
-        width: 100%;
-        box-shadow: none;
-    }
+.photo-gallery img{
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
 }
-
-// Media Screen for mobile respsonsive set these property to them
-@media screen and (max-width: $breakPointMob) {
-
+.photo-gallery img:hover {
+    filter: brightness(100%);
+    transform: scale(0.5);
 }

@@ -6,11 +6,12 @@
     <title>Project Two: Fun Place</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascript.js"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <!-- header section with a toggled menu bar -->
     <header class="header-main banner">
         <div class="content-wrap">
             <button class="hamburger"><i class="fa fa-bars"></i></button>
@@ -21,46 +22,57 @@
 					</button>
                     <ul>
                         <li><a href="#">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html" target="_blank">Blog</a></li>
+                        <li><a href="contact.html" target="_blank">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-            <h1>FUN PLACE</h1>
-            <div class="header-img">
-                <img src="styles/FunPlace-final-assets/home-box-header.jpg" alt="A boy on a skateboard">
+            <div>
+                <h1>Fun Place</h1>
+                <div class="header-img">
+                    <img src="styles/FunPlace-final-assets/home-box-header.jpg" alt="A boy on a skateboard">
+                </div>
             </div>
         </div>
     </header>
+    <!-- This is where th header ends -->
+    <!-- Main section on the page -->
     <main>
+        <!-- Section where the 4 icon program starts -->
         <section class="main-blue">
             <div class="content-wrap">
                 <div class="four-program">
-                    <div class="program">
+                    <div class="program-flex">
                         <i class='fa fa-home icon-program'></i>
-                        <h3>New Space</h3>
-                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
-                        <i class="fa fa-file icon-program"></i>
-                        <h3>BLOG</h3>
-                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                        <h3 class="highlight">New Space</h3>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
                     </div>
-                    <div class="program">
+                    <div class="program-flex">
+                        <i class="fa fa-file icon-program"></i>
+                        <h3 class="highlight">BLOG</h3>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat
+                            </p>
+                    </div>
+                    <div class="program-flex">
                         <i class="fa fa-group icon-program"></i>
-                        <h3>Community</h3>
-                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                        <h3 class="highlight">Community</h3>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                    </div>
+                    <div class="program-flex">
                         <i class="fa fa-phone icon-program"></i>
-                        <h3>Get in Touch</h3>
-                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                        <h3 class="highlight">Get in Touch</h3>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
                     </div>
                 <div>
             </div>
         </section>
+        <!-- New Location and Our Program section with image beside ontop/below text content -->
         <section class="main-purple">
             <div class="content-wrap">
                 <div class="purple-flex">
                     <div class="purple-container">
-                        <img class="img-up" src="styles/FunPlace-final-assets/left-image.jpg" alt="a young girl with curly hard smiling">
                         <div class="content-right">
+                            <img class="img-up" src="styles/FunPlace-final-assets/left-image.jpg" alt="a young girl with curly hard smiling">
                             <h3>New Location</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsa, omnis eveniet magnam debitis possimus delectus. Saepe quae eius necessitatibus explicabo tempora officia? Esse iste, nemo sed magnam quam recusandae?</p>
                             <button>READ MORE</button>
@@ -71,12 +83,13 @@
                             <h3>Our Programs</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsa, omnis eveniet magnam debitis possimus delectus. Saepe quae eius necessitatibus explicabo tempora officia? Esse iste, nemo sed magnam quam recusandae?</p>
                             <button>READ MORE</button>
+                            <img class="img-down"src="styles/FunPlace-final-assets/right-image.jpg" alt="A child's hand on a yellow block">
                         </div>
-                        <img class="img-down"src="styles/FunPlace-final-assets/right-image.jpg" alt="A child's hand on a yellow block">
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Road Trip section with a banner at the bottom -->
         <section class="road-trips">
             <div class="content-wrap">
                 <div class="trips-container">
@@ -87,18 +100,20 @@
             </div>
             <img src="styles/FunPlace-final-assets/banner.jpg" alt="People swimming in the river">
         </section>
+        <!-- Event section of the page  -->
         <section class="events">
             <div class="content-wrap">
                 <div class="events-container">
                     <img src="styles/FunPlace-final-assets/small-box.jpg" alt="children looking at their notes">
                     <div class="events-text">
                         <h3>Events</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi ducimus explicabo! At nostrum ullam tempore repudiandae nisi, illo praesentium illum quo aspernatur impedit id, voluptates, a tempora quam vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae neque, a, rerum minus quos velit autem quibusdam tenetur vitae eos nam magni minima sit labore officia? Corrupti, quis sapiente!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi ducimus explicabo! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, natus blanditiis cumque perspiciatis commodi tempore quae ea libero molestiae repellat. Lorem ipsum dolor sit amet.</p>
                         <button>Find Out More</button>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Gallery Section of the page -->
         <section class="gallery">
             <div class="content-wrap">
                 <div class="photo-gallery">
@@ -115,10 +130,13 @@
             </div>
         </section>
     </main>
+    <!-- Main section ends here -->
+    <!-- Footer section begins here -->
     <footer>
         <div class="content-wrap">
             <p>Copyright @ 2019 Juno College</p>
         </div>
     </footer>
+    <!-- Footer ends here -->
 </body>
 </html>

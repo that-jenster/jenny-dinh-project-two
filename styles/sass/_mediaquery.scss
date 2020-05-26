@@ -1,0 +1,169 @@
+/* Media Query for breakpoint of a desktop to tablet version */
+
+/* Universal Media Query */
+@media screen and (max-width: $breakPointTab) {
+/* Media Query for Navigation Bar */
+    .hamburger,
+    .exit-responsive {
+        margin: 0;
+        display: block;
+        font-size: 25px;
+    }
+    nav {
+        display: none;
+    }
+    
+    nav .fullScreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.95);
+        color: white;
+        z-index: 10;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    h2,
+    h3 {
+        padding: 50px 0 0px 0;
+        line-height: normal;
+    }
+    h2 {
+        text-align: center;
+    }
+    .highlight {
+        text-shadow: 
+            20px 0px 20px $sideColor,
+            -20px 0px 20px $sideColor;
+    }
+/* Responsive for main index.html page */
+    .header-img {
+        display: none;
+    }
+
+    .four-program {
+        flex-direction: column;
+        text-align: center;
+    }
+    .program-flex {
+        padding: 0;
+        width: 100%;
+    }
+    .icon-program {
+        position: relative;
+        right: 0;
+        top: 15px;
+    }
+    .purple-flex,
+    .photo-gallery,
+    .events-container {
+        flex-direction: column;
+    }
+
+    .purple-container {
+        width: 100%;
+        text-align: center;
+            .img-up,
+            .img-down{
+                bottom: 0;
+            }
+    } 
+    .content-right {
+        text-align: center;
+    }
+    .events-text {
+        width: 100%;
+        text-align: center;
+    }
+    .events-container img {
+        width: 100%;
+        box-shadow: none;
+    }
+
+/* Responsive for blog page */
+.main-blog {
+    flex-direction: column;
+}
+
+aside,
+.section-blog {
+    width: 100%;
+}
+
+.border-line {
+    padding: 20px;
+    border: 2px dotted $sideColor;
+}
+
+aside div img {
+    z-index: 0;
+    top: 0px;
+    padding: 50px;
+}
+
+.aside-purple {
+    margin: 0;
+    transform: translate(0);
+}
+
+.content-section {
+    border: none;
+        img {
+            box-shadow: none;
+            bottom: 0;
+            padding: 50px;
+        }
+}
+.people-comments h3 {
+    text-align: center;
+}
+
+/* Responsive for form section on blog and contact page */
+    input[type=text],
+    input[type=email] {
+        width: 100%;
+    }
+    form {
+        margin: 40px;
+    }
+
+/* Media Query for contact page responsive design */
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .social-media {
+        width: 100%;
+    }
+
+    .form-input-contact {
+        padding: 40px;
+        right: 0;
+        bottom: 0;
+        box-shadow: none;
+    }
+}
+
+/* Media Query Tablet to Mobile Version */
+@media screen and (max-width: $breakPointMob) {
+    .section-comments  {
+        flex-direction: column;
+            img {
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+            div p:nth-child(2) {
+                display: none;
+            }
+    }
+
+/* Mobile responsive for contact page*/
+    .social-media {
+        padding: 40px;
+    }
+}
