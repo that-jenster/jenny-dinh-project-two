@@ -85,42 +85,42 @@
     }
 
 /* Responsive for blog page */
-.main-blog {
-    flex-direction: column;
-}
+    .main-blog {
+        flex-direction: column;
+    }
 
-aside,
-.section-blog {
-    width: 100%;
-}
+    aside,
+    .section-blog {
+        width: 100%;
+    }
 
-.border-line {
-    padding: 20px;
-    border: 2px dotted $sideColor;
-}
+    .border-line {
+        padding: 20px;
+        border: 2px dotted $sideColor;
+    }
 
-aside div img {
-    z-index: 0;
-    top: 0px;
-    padding: 50px;
-}
+    aside div img {
+        z-index: 0;
+        top: 0px;
+        padding: 50px;
+    }
 
-.aside-purple {
-    margin: 0;
-    transform: translate(0);
-}
+    .aside-purple {
+        margin: 0;
+        transform: translate(0);
+    }
 
-.content-section {
-    border: none;
-        img {
-            box-shadow: none;
-            bottom: 0;
-            padding: 50px;
-        }
-}
-.people-comments h3 {
-    text-align: center;
-}
+    .content-section {
+        border: none;
+            img {
+                box-shadow: none;
+                bottom: 0;
+                padding: 50px;
+            }
+    }
+    .people-comments h3 {
+        text-align: center;
+    }
 
 /* Responsive for form section on blog and contact page */
     input[type=text],

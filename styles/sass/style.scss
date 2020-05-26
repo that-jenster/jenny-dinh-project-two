@@ -8,6 +8,9 @@
 @import "mediaquery";
 
 /* Global CSS style */
+html {
+    font-size: 100%;
+}
 .content-wrap {
     max-width: 75rem;
     margin: 0 auto;
